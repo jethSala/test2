@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/animations.css">
+    <link rel="stylesheet" href="./CSS/hover.css">
+    <title>Engineering Economics Calculator</title>
+</head>
+<body>
+    <nav>
+        <img src="./assets/AC.png">
+        <img src="./assets/CCSE.png">
+        <h3>Engineering Economics Calculator (EEC)</h3>
+    </nav>
+    <div id="wrapper">
+        <div id="optionwrapping">
+            <div id="option1"><img src="assets/Calculate Icon.png" alt="Calculate"></div>
+            <div id="option2"><img src="assets/Convert Icon.png" alt="Convert"></div>
+        </div>
+        <div id="calculate" title="Calculator for Different Economic Problems">
+            <div id="answerContainer">
+                <h6 id="iEarned">Interest Earned: </h6>
+                <h3 id="answer">Present Value: </h3>
+            </div>
+            <h5>Select Option:</h5>
+            <select id="calculationOption">
+                <option value="PVA">Present Value of Anuity</option>
+                <option value="FVA">Future Value of Anuity</option>
+                <option value="PTVM">Present Time Value of Money</option>
+                <option value="FTVM">Future Time Value of Money</option>
+                <option value="PED">Price Elasticity and Demand</option>
+                <option value="Y">Years</option>
+                <!--
+                <option value="I">Interest</option>
+                <option value="Cp">Compounded</option>
+                -->
+            </select>
+            <div class="containerInput">
+                <h4 id="cur">Currency:</h4>
+                <select id="Option1">
+                    <option value="₱">Philippine Peso</option>
+                    <option value="$">Americal Dollar</option>
+                    <option value="¥">Japanese Yen</option>
+                    <option value="₩">Korean Won</option>
+                    <option value="€">British Euro</option>
+                </select>
+                <h4 id="com">Compounded:</h4>
+                <select id="Option2">
+                    <option value="1">Annually</option>
+                    <option value="2">Semi-Annually</option>
+                    <option value="4">Quarterly</option>
+                    <option value="12">Monthly</option>
+                    <option value="52">Weekly</option>
+                    <option value="365">Daily</option>
+                </select>
+                <h4 id="value1">Regular Deposit: </h4><input type="number" id="inptvalue1">
+                <h4 id="value2">Interest: </h4><input type="number" id="inptvalue2">
+                <h4 id="value3">Years: </h4><input type="number" id="inptvalue3">
+                <h4 id="value4" class="displayN">Quantity 2: </h4><input type="number" id="value5" class="displayN">
+                <button id="solve" onclick="solve()">Solve</button>
+            </div>
+        </div>
+        <div id="conversion" title="Convert Money Value">
+            <div></div>
+        </div>
+    </div>
+    <footer>
+        <h4>Copyright © 2023 by BSCpE - Sala, Pelarion, Awil, Ronquillo, Ligutom. All rights reserved.</h4>
+    </footer>
+    <script src="./JS/declareVar.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/solving.js"></script>
+    <script src="./JS/optionChange.js"></script>
+</body>
+</html>

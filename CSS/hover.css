@@ -1,0 +1,25 @@
+.scale {
+    transform: scale(1.2) !important;
+    z-index: 2 !important;
+}
+
+.descale {
+    transform: scale(1) !important;
+    z-index: 1 !important;
+}
+
+.display {
+    display: block !important;
+}
+
+.displayN {
+    display: none !important;
+}
+
+.displayG {
+    display: grid !important;
+}
+
+#solve:hover {
+    border-color: white;
+}   
